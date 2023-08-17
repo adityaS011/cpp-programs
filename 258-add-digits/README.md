@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/add-digits">Add Digits</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Given an integer <code>num</code>, repeatedly add all its digits until the result has only one digit, and return it.</p>
+<h2><a href="https://leetcode.com/problems/add-digits">Add Digits -Google</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Given an integer <code>num</code>, repeatedly add all its digits until the result has only one digit, and return it.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
