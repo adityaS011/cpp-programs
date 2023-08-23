@@ -1,18 +1,24 @@
 class Solution {
 public:
+
+         int fib(int n){
+        if(n<=1) return n;
+        return fib(n-1) +fib(n-2);
+    }
+    
 //using dynamic programming 
 
     // Tabulation t=O(n),S = O(1)
-    int fib(int n){
+   /* int fib(int n){
         if(n==0 || n==1) return n;
-        int prev2=0, prev=1, cur=0;
+        int prev2=0, prev=1;
         for(int i=2;i<=n;i++){
-            cur=prev+prev2;
+            int cur=prev+prev2;
             prev2=prev;
             prev=cur;
         }
-        return cur;
-    }
+        return prev;
+    } */
 
     
     //--memoization with recursion t=O(n),S = O(n)
@@ -26,4 +32,6 @@ public:
         vector<int> dp(n+1,-1);
         return f(n,dp);
     } */
+
+   
 };
