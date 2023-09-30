@@ -1,14 +1,12 @@
 # cpp-programs
 # Contributing to cpp-programs
 
-Thank you for your interest in contributing to this repository. Your contributions are greatly appreciated!
+Welcome to my C++ programs repository. We're participating in Hacktoberfest, and we welcome contributions!
+## Hacktoberfest 2023
 
-## Getting Started
+We're excited to participate in Hacktoberfest 2023! Contribute to our C++ projects and earn cool swag.
 
-To get started with contributing to this project, follow these steps:
+## How to Contribute
 
-1. **Fork** the repository on GitHub.
-2. **Clone** your forked repository to your local machine:
+If you'd like to contribute, please check out our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this repository.
 
-   ```bash
-   git clone https://github.com/adityaS011/cpp-programs
