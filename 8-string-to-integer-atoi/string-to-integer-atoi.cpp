@@ -12,11 +12,8 @@ public:
     }
     while (isdigit(str[i])) {
         result = result * 10 + (str[i] - '0');
-        if (result * sign > INT_MAX) {
-            return INT_MAX;
-        }
-        if (result * sign < INT_MIN) {
-            return INT_MIN;
+        if (result > INT_MAX) {
+            return (sign == -1) ? INT_MIN : INT_MAX;
         }
         i++;
     }
