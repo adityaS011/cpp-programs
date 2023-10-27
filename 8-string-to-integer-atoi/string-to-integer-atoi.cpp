@@ -1,21 +1,25 @@
 class Solution {
 public:
-    int myAtoi(string s) {
-        int i = 0;
-        int sign = 1;
-        int result = 0;
-        while (s[i] == ' ') {
-            i++;
+    int myAtoi(string str) {
+    long result = 0;  
+    int sign = 1; 
+    int i = 0;
+    while (str[i] == ' ') {
+        i++;
+    }
+    if (str[i] == '+' || str[i] == '-') {
+        sign = (str[i++] == '-') ? -1 : 1;
+    }
+    while (isdigit(str[i])) {
+        result = result * 10 + (str[i] - '0');
+        if (result * sign > INT_MAX) {
+            return INT_MAX;
         }
-        if (s[i] == '-' || s[i] == '+') {
-            sign = (s[i++] == '-') ? -1 : 1;
+        if (result * sign < INT_MIN) {
+            return INT_MIN;
         }
-        while (isdigit(s[i])) {
-            if (result > INT_MAX /10  || (result == INT_MAX /10 && s[i] - '0' > INT_MAX % 10)) {
-                return (sign == -1) ? INT_MIN : INT_MAX;
-            }
-            result = result * 10 + (s[i++] - '0');
-        }
-        return result * sign;
+        i++;
+    }
+    return result * sign;
     }
 };
